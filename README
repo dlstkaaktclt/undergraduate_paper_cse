@@ -1,0 +1,35 @@
+based on the CS:APP Malloc Lab (c) by R.Bryant and D.O'Hallaron.
+
+0. Files:
+---------
+
+all file based on segregated free list structure.
+
+mm.c, mm_Size_based_split_96.c : Size based split using k = 96
+mm_Size_based_split_128.c : Size based split using k = 128
+mm_Ordinary_split.c : Ordinary split
+
+
+if you want test other code, change mm.c file
+
+ex) you want get ordinary split results, then remove mm.c file, and rename mm_Ordinary_split.c to mm.c file.
+
+
+1. Building and running the driver
+----------------------------------
+
+To build the driver, type "make" to the shell.
+
+To run the driver on a tiny test trace:
+
+  $ mdriver -V -f short1-bal.rep
+
+The -V option prints out helpful tracing and summary information.
+
+To get a list of the driver flags:
+
+  $ mdriver -h
+
+To test all of trace, (to get paper result)
+
+  $ mdriver -v
